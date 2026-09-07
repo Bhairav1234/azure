@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-zone-service"
+		},
+		"LS_PRABHAS_accountKey": {
+			"value": ""
+		},
+		"LS_PRABHAS_properties_typeProperties_url": {
+			"value": "https://storageprabhasaccount.dfs.core.windows.net/"
+		}
+	}
+}
