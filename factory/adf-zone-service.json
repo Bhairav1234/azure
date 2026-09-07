@@ -1,0 +1,15 @@
+{
+	"name": "adf-zone-service",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3cdba4b3-912c-491f-978c-b8b2c26b1137",
+		"tenantId": "a8f03817-ff73-41ca-b2f3-99141c76ac30"
+	}
+}
