@@ -1,0 +1,17 @@
+{
+	"name": "DDD",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_PRABHAS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "siscontainer"
+			}
+		}
+	}
+}

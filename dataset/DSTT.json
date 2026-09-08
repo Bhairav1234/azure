@@ -1,0 +1,35 @@
+{
+	"name": "DSTT",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_PRABHAS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"DSTT": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "ADLS"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().DSTT",
+					"type": "Expression"
+				},
+				"folderPath": "READYDATA",
+				"fileSystem": "siscontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

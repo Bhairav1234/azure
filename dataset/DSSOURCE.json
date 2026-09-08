@@ -1,0 +1,35 @@
+{
+	"name": "DSSOURCE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_PRABHAS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"SRC_FILE": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "ADLS"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().SRC_FILE",
+					"type": "Expression"
+				},
+				"folderPath": "start",
+				"fileSystem": "siscontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
